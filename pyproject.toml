@@ -1,0 +1,23 @@
+[project]
+name = "meteo-data-etl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Brenda Duplat", email = "brendaduplat352@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pandas>=3.0.5",
+    "psycopg2-binary>=2.9.12",
+    "python-dotenv>=1.2.3",
+    "requests>=2.34.2",
+    "sqlalchemy>=2.0.52",
+]
+
+[project.scripts]
+meteo-data-etl = "meteo_data_etl:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
