@@ -13,7 +13,7 @@ def extract_weather_data(url: str) -> list:
     except requests.exceptions.RequestException as erro:
         logging.error(f"Erro {erro} na requisição")
         raise
-
+    
     output_path = "data/weather_data.json"
     output_dir = Path(output_path).parent
     output_dir.mkdir(parents=True, exist_ok=True)
