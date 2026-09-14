@@ -14,7 +14,7 @@ Commits are structured to reflect the learning process. Each commit generally co
 
 ## Status
 
-🚧 In development, currently in the extraction phase
+🚧 In development, currently in the transform phase
 
 ## Planned stack
 
@@ -27,6 +27,7 @@ These are the intended next steps as the project evolves beyond the current extr
 
 ## Project structure
 
+```
 ├── config/ 
 │   └── .env                       # planned, not yet used in code                     
 ├── data/
@@ -35,11 +36,13 @@ These are the intended next steps as the project evolves beyond the current extr
 ├── notebooks/
 │   └── analysis_data.ipynb  
 ├── src/
-│   └── extract_data.py     
+│   ├── extract_data.py
+│   └── transform.py
 ├── .gitignore
 ├── pyproject.toml
 ├── README.md
 └── uv.lock
+```
 
 > Note: `config/` is part of the planned structure for environment variables (to be used with the Airflow orchestration) and is not yet active in the current code. `data/` is generated automatically when `extract_data.py` runs; its contents are not tracked in version control.
 
