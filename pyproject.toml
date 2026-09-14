@@ -1,7 +1,7 @@
 [project]
 name = "meteo-data-etl"
 version = "0.1.0"
-description = "Add your description here"
+description = "Weather data ETL pipeline for Salvador, BA, built as a data engineering study project"
 readme = "README.md"
 authors = [
     { name = "Brenda Duplat", email = "brendaduplat352@gmail.com" }
@@ -14,9 +14,6 @@ dependencies = [
     "requests>=2.34.2",
     "sqlalchemy>=2.0.52",
 ]
-
-[project.scripts]
-meteo-data-etl = "meteo_data_etl:main"
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
